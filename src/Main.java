@@ -1,5 +1,3 @@
-import org.w3c.dom.events.EventException;
-
 class Main
 {
     public static void main(String[] args)
