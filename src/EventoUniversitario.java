@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-class EventoUniversitario {
+public class EventoUniversitario {
     private final String id;
     private String titulo;
     private double costoBase;
@@ -30,8 +30,7 @@ class EventoUniversitario {
         this.gratuito = otro.gratuito;
         this.sala = otro.sala;
 
-        this.listaActividades = new ArrayList<>();
-        this.listaActividades = otro.listaActividades;
+        this.listaActividades = new ArrayList<>(otro.listaActividades);
 
         cantidadEventos++;
     }

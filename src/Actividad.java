@@ -2,13 +2,13 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-class Actividad {
+public class Actividad {
     private int id;
     private String titulo;
     private int cupoMaximo;
     public static final int CUPO_MINIMO = 0;
 
-    private List<inscripcion> listaInscripciones;
+    private List<Inscripcion> listaInscripciones;
 
     public Actividad(int id, String titulo, int cupoMaximo) {
         this.id = id;
@@ -18,9 +18,11 @@ class Actividad {
         this.listaInscripciones = new ArrayList<>();
     }
 
-    public inscripcion inscribir(Estudiante estudiante) {
-        listaInscripciones.add(new inscripcion(LocalDate.now(), "Inscripto", estudiante, this));
-        return listaInscripciones.getLast();
+    public Inscripcion inscribir(Estudiante estudiante) {
+        Inscripcion ins = new Inscripcion(LocalDate.now(), "Inscripto", estudiante, this);
+        listaInscripciones.add(ins);
+
+        return ins;
     }
 
     public void mostrarInscripciones() {
