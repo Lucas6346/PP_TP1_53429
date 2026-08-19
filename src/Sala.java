@@ -7,4 +7,10 @@ public class Sala {
         this.id = id;
         this.nombre = nombre;
     }
+
+    public void mostrarDatosSala()
+    {
+        System.out.println("Id sala: " + id);
+        System.out.println("Nombre sala: " + nombre);
+    }
 }

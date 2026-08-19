@@ -28,4 +28,11 @@ public class Actividad {
     public void mostrarInscripciones() {
         System.out.println("Hay un total de " + listaInscripciones.size() + " inscripciones"); // <------------- terminar
     }
+
+    public void mostrarDatosAct()
+    {
+        System.out.println("Id actividad: " + id);
+        System.out.println("Título actividad: " + titulo);
+        System.out.println("Cupo máximo actividad: " + cupoMaximo);
+    }
 }

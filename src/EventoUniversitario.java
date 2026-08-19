@@ -48,10 +48,15 @@ public class EventoUniversitario {
         }
         System.out.println("¿Es gratuito?: " + strEsGratis);
 
-        System.out.println("Actividades:");
+        System.out.println("----- Datos de la sala asignada: ");
+        sala.mostrarDatosSala();
+        System.out.println("-----");
+
+        System.out.println("----- Actividades:");
         for(Actividad act : listaActividades)
         {
-            System.out.println(); // <----------------------- terminar
+            act.mostrarDatosAct();
+            System.out.println("---");
         }
 
 
