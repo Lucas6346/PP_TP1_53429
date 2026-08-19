@@ -12,4 +12,11 @@ public class Inscripcion {
         this.est = est;
         this.act = act;
     }
+
+    public void mostrarDatosInscripcion() {
+        System.out.println("Fecha: " + fecha);
+        System.out.println("Estado: " + estado);
+        System.out.println("Datos del estudiante:");
+        est.mostrarDatosEstudiante();
+    }
 }

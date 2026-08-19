@@ -26,13 +26,20 @@ public class Actividad {
     }
 
     public void mostrarInscripciones() {
-        System.out.println("Hay un total de " + listaInscripciones.size() + " inscripciones"); // <------------- terminar
+        System.out.println("====== Mostrando Datos de las Inscripciones ======");
+        System.out.println("Hay un total de " + listaInscripciones.size() + " inscripciones");
+        System.out.println("-----");
+        for(Inscripcion ins : listaInscripciones)
+        {
+            ins.mostrarDatosInscripcion();
+            System.out.println("-----");
+        }
+        System.out.println("==================================================");
     }
 
-    public void mostrarDatosAct()
-    {
-        System.out.println("Id actividad: " + id);
-        System.out.println("Título actividad: " + titulo);
-        System.out.println("Cupo máximo actividad: " + cupoMaximo);
+    public void mostrarDatosAct() {
+        System.out.println("Id: " + id);
+        System.out.println("Título: " + titulo);
+        System.out.println("Cupo máximo: " + cupoMaximo);
     }
 }
