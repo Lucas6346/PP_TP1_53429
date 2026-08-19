@@ -74,4 +74,9 @@ public class EventoUniversitario {
     public static int getCantidadEventos() {
         return cantidadEventos;
     }
+
+    public Actividad getActividad(int id)
+    {
+        return listaActividades.get(id);
+    }
 }
