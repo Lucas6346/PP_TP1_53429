@@ -36,8 +36,11 @@ public class EventoUniversitario {
     }
 
     public void mostrarDatos() {
-        System.out.println("====== Mostrando datos de evento ======");
+        // <--------------------------------------- cambiar forma de mostrar datos
+        // <--------------------------------------- agregar Actividad.mostrarInscripciones()
+
         String strEsGratis = "No";
+        System.out.println("============== Mostrando datos de evento ==============");
 
         System.out.println("Id del evento: " + id);
         System.out.println("Título: " + titulo);
@@ -48,19 +51,17 @@ public class EventoUniversitario {
         }
         System.out.println("¿Es gratuito?: " + strEsGratis);
 
-        System.out.println("----- Datos de la sala asignada: ");
+        System.out.println("-------------------- Sala asignada --------------------");
         sala.mostrarDatosSala();
-        System.out.println("-----");
 
-        System.out.println("----- Actividades:");
+        System.out.println("--------------------- Actividades ---------------------");
         for(Actividad act : listaActividades)
         {
             act.mostrarDatosAct();
             System.out.println("---");
         }
 
-
-        System.out.println("=======================================");
+        System.out.println("=======================================================");
     }
 
     public void asignarSala(Sala sala) {

@@ -30,13 +30,23 @@ public class App
         ev2.crearActividad(2, "Taller de cableado", 90);
 
         //e) Inscribir estudiantes a cada actividad
-        for (int i = 0; i <= 5; i++)
+        for (int i = 0; i < 5; i++)
         {
             ev1.getActividad(0).inscribir(listaEstudiantes.get(i));
             ev1.getActividad(1).inscribir(listaEstudiantes.get(i));
-            ev1.getActividad(2).inscribir(listaEstudiantes.get(i));
+
+            ev2.getActividad(0).inscribir(listaEstudiantes.get(i));
         }
 
         //f) Mostrar resumen de datos por cada evento
+        ev1.mostrarDatos();
+        ev1.getActividad(0).mostrarInscripciones();
+        ev1.getActividad(1).mostrarInscripciones();
+
+        ev2.mostrarDatos();
+        ev2.getActividad(0).mostrarInscripciones();
+
+        //g) Mostrar total de eventos creados
+        System.out.println("Total de eventos creados: " + EventoUniversitario.getCantidadEventos());
     }
 }

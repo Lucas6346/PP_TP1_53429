@@ -18,11 +18,9 @@ public class Actividad {
         this.listaInscripciones = new ArrayList<>();
     }
 
-    public Inscripcion inscribir(Estudiante estudiante) {
+    public void inscribir(Estudiante estudiante) {
         Inscripcion ins = new Inscripcion(LocalDate.now(), "Inscripto", estudiante, this);
         listaInscripciones.add(ins);
-
-        return ins;
     }
 
     public void mostrarInscripciones() {
