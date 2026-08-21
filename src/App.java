@@ -1,6 +1,8 @@
 import java.util.ArrayList;
 import java.util.List;
 
+//TODO cambiar main para el punto 3
+
 public class App
 {
     public static void main(String[] args)
@@ -24,10 +26,11 @@ public class App
         ev2.asignarSala(sala2);
 
         //d) Crear actividades propias de cada evento
-        /*ev1.crearActividad(0, "Taller de sistemas", 50);
-        ev1.crearActividad(1, "Curso de Programación", 200);
+        ev1.crearActividad(0, "Charla de sistemas", 50, "Charla", "Juan Perez");
+        ev1.crearActividad(1, "Taller de Programación", 200, "Taller", true);
 
-        ev2.crearActividad(2, "Taller de cableado", 90);*/
+        ev2.crearActividad(2, "Taller de cableado", 90, "Taller", false);
+
 
         //e) Inscribir estudiantes a cada actividad
         for (int i = 0; i < 5; i++)
@@ -38,6 +41,7 @@ public class App
             ev2.getActividad(0).inscribir(listaEstudiantes.get(i));
         }
 
+        /*
         //f) Mostrar resumen de datos por cada evento
         ev1.mostrarDatos();
         ev1.getActividad(0).mostrarInscripciones();
@@ -45,6 +49,7 @@ public class App
 
         ev2.mostrarDatos();
         ev2.getActividad(0).mostrarInscripciones();
+        */
 
         //g) Mostrar total de eventos creados
         System.out.println("Total de eventos creados: " + EventoUniversitario.getCantidadEventos());

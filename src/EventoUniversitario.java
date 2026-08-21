@@ -1,6 +1,9 @@
 import java.util.ArrayList;
 import java.util.List;
 
+//FIXME
+//  cambiar mostrarDatos() para que muestre datos que correspondan a taller o charla
+
 public class EventoUniversitario {
     private final String id;
     private String titulo;
@@ -36,8 +39,6 @@ public class EventoUniversitario {
     }
 
     public void mostrarDatos() {
-        // <--------------------------------------- cambiar forma de mostrar datos
-        // <--------------------------------------- agregar Actividad.mostrarInscripciones()
 
         String strEsGratis = "No";
         System.out.println("============== Mostrando datos de evento ==============");
@@ -68,23 +69,28 @@ public class EventoUniversitario {
         this.sala = sala;
     }
 
-    public void crearActividad(int id, String titulo, int cupoMax, boolean requiereNotebook)
+    public void crearActividad(int i, String titulo, int cupoMax, String tipo, String disertante)
     {
-        listaActividades.add(new Taller(id, titulo, cupoMax, requiereNotebook));
+        if(tipo.equals("Charla"))
+        {
+            listaActividades.add(new Charla(i, titulo, cupoMax, disertante));
+        }
+        else
+        {
+            System.out.println("Error en el tipo");
+        }
     }
 
-    public void crearActividad(int id, String titulo, int cupoMax, String disertante)
+    public void crearActividad(int i, String titulo, int cupoMax, String tipo, boolean requiereNotebook)
     {
-        listaActividades.add(new Charla(id, titulo, cupoMax, disertante));
-    }
-
-    public static int getCantidadEventos() {
-        return cantidadEventos;
-    }
-
-    public Actividad getActividad(int id)
-    {
-        return listaActividades.get(id);
+        if(tipo.equals("Taller"))
+        {
+            listaActividades.add(new Taller(i, titulo, cupoMax, requiereNotebook));
+        }
+        else
+        {
+            System.out.println("Error en el tipo");
+        }
     }
 
     public double calcularCostoEstimado()
@@ -102,5 +108,14 @@ public class EventoUniversitario {
         }
 
         return res * 1.21;
+    }
+
+    public static int getCantidadEventos() {
+        return cantidadEventos;
+    }
+
+    public Actividad getActividad(int i)
+    {
+        return listaActividades.get(i);
     }
 }
