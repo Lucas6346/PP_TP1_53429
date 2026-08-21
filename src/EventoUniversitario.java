@@ -86,4 +86,21 @@ public class EventoUniversitario {
     {
         return listaActividades.get(id);
     }
+
+    public double calcularCostoEstimado()
+    {
+        double res = costoBase;
+
+        if(gratuito)
+        {
+            return 0;
+        }
+
+        for(Actividad act : listaActividades)
+        {
+            res += act.calcularCostoMateriales();
+        }
+
+        return res * 1.21;
+    }
 }
