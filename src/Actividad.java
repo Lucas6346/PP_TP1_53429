@@ -2,7 +2,7 @@ import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Actividad {
+public abstract class Actividad {
     private int id;
     private String titulo;
     private int cupoMaximo;
@@ -40,4 +40,12 @@ public class Actividad {
         System.out.println("Título: " + titulo);
         System.out.println("Cupo máximo: " + cupoMaximo);
     }
+
+    public final void mostrarIdentificacion()
+    {
+        System.out.println("Esta actividad es de tipo: " + this.getTipo());;
+    }
+
+    public abstract double calcularCostoMateriales();
+    public abstract String getTipo();
 }

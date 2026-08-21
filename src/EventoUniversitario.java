@@ -68,8 +68,14 @@ public class EventoUniversitario {
         this.sala = sala;
     }
 
-    public void crearActividad(int id, String titulo, int cupoMax) {
-        listaActividades.add(new Actividad(id, titulo, cupoMax));
+    public void crearActividad(int id, String titulo, int cupoMax, boolean requiereNotebook)
+    {
+        listaActividades.add(new Taller(id, titulo, cupoMax, requiereNotebook));
+    }
+
+    public void crearActividad(int id, String titulo, int cupoMax, String disertante)
+    {
+        listaActividades.add(new Charla(id, titulo, cupoMax, disertante));
     }
 
     public static int getCantidadEventos() {

@@ -24,10 +24,10 @@ public class App
         ev2.asignarSala(sala2);
 
         //d) Crear actividades propias de cada evento
-        ev1.crearActividad(0, "Taller de sistemas", 50);
+        /*ev1.crearActividad(0, "Taller de sistemas", 50);
         ev1.crearActividad(1, "Curso de Programación", 200);
 
-        ev2.crearActividad(2, "Taller de cableado", 90);
+        ev2.crearActividad(2, "Taller de cableado", 90);*/
 
         //e) Inscribir estudiantes a cada actividad
         for (int i = 0; i < 5; i++)
