@@ -9,7 +9,7 @@ public class Estudiante
     }
 
     public void mostrarDatosEstudiante() {
-        System.out.println("Legajo: " + legajo);
-        System.out.println("Nombre: " + nombre);
+        System.out.println("| Legajo: " + legajo);
+        System.out.println("| Nombre: " + nombre);
     }
 }

@@ -25,12 +25,12 @@ public abstract class Actividad {
 
     public void mostrarInscripciones() {
         System.out.println("======= Inscripciones =======");
-        System.out.println("Hay un total de " + listaInscripciones.size() + " inscripciones");
-        System.out.println("-----");
+        System.out.println("| Hay un total de " + listaInscripciones.size() + " inscripciones");
+        System.out.println("| -----");
         for(Inscripcion ins : listaInscripciones)
         {
             ins.mostrarDatosInscripcion();
-            System.out.println("-----");
+            System.out.println("| -----");
         }
     }
 

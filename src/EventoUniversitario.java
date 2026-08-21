@@ -56,13 +56,13 @@ public class EventoUniversitario {
 
         for(Actividad act : listaActividades)
         {
+            System.out.println("=============================");
             act.mostrarDatosAct();
             act.mostrarIdentificacion();
-            //System.out.println("----------------------------------------");
             act.mostrarInscripciones();
         }
 
-        //System.out.println("=======================================================");
+        System.out.println("=======================================================\n");
     }
 
     public void asignarSala(Sala sala) {

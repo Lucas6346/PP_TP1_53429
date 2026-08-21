@@ -14,9 +14,9 @@ public class Inscripcion {
     }
 
     public void mostrarDatosInscripcion() {
-        System.out.println("Fecha: " + fecha);
-        System.out.println("Estado: " + estado);
-        System.out.println("Datos del estudiante:");
+        System.out.println("| Fecha: " + fecha);
+        System.out.println("| Estado: " + estado);
+        System.out.println("| Datos del estudiante:");
         est.mostrarDatosEstudiante();
     }
 }
