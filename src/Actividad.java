@@ -6,7 +6,7 @@ public abstract class Actividad {
     private int id;
     private String titulo;
     private int cupoMaximo;
-    public static final int CUPO_MINIMO = 0;
+    public static final int CUPO_MINIMO = 10;
 
     private List<Inscripcion> listaInscripciones;
 
@@ -24,7 +24,7 @@ public abstract class Actividad {
     }
 
     public void mostrarInscripciones() {
-        System.out.println("====== Mostrando Datos de las Inscripciones ======");
+        System.out.println("======= Inscripciones =======");
         System.out.println("Hay un total de " + listaInscripciones.size() + " inscripciones");
         System.out.println("-----");
         for(Inscripcion ins : listaInscripciones)
@@ -32,18 +32,17 @@ public abstract class Actividad {
             ins.mostrarDatosInscripcion();
             System.out.println("-----");
         }
-        System.out.println("==================================================");
     }
 
     public void mostrarDatosAct() {
-        System.out.println("Id: " + id);
-        System.out.println("Título: " + titulo);
-        System.out.println("Cupo máximo: " + cupoMaximo);
+        System.out.println("| Actividad: " + titulo);
+        System.out.println("| ID de actividad: " + id);
+        System.out.println("| Cupo máximo: " + cupoMaximo);
     }
 
     public final void mostrarIdentificacion()
     {
-        System.out.println("Esta actividad es de tipo: " + this.getTipo());;
+        System.out.println("| Esta actividad es de tipo: " + this.getTipo());
     }
 
     public abstract double calcularCostoMateriales();

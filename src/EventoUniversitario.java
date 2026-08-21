@@ -1,9 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-//FIXME
-//  cambiar mostrarDatos() para que muestre datos que correspondan a taller o charla
-
 public class EventoUniversitario {
     private final String id;
     private String titulo;
@@ -45,7 +42,7 @@ public class EventoUniversitario {
 
         System.out.println("Id del evento: " + id);
         System.out.println("Título: " + titulo);
-        System.out.println("Costo base: " + costoBase + "$");
+        System.out.println("Costo estimado: " + calcularCostoEstimado() + "$");
 
         if (gratuito) {
             strEsGratis = "Sí";
@@ -56,13 +53,16 @@ public class EventoUniversitario {
         sala.mostrarDatosSala();
 
         System.out.println("--------------------- Actividades ---------------------");
+
         for(Actividad act : listaActividades)
         {
             act.mostrarDatosAct();
-            System.out.println("---");
+            act.mostrarIdentificacion();
+            //System.out.println("----------------------------------------");
+            act.mostrarInscripciones();
         }
 
-        System.out.println("=======================================================");
+        //System.out.println("=======================================================");
     }
 
     public void asignarSala(Sala sala) {

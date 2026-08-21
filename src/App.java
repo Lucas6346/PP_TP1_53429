@@ -1,8 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
 
-//TODO cambiar main para el punto 3
-
 public class App
 {
     public static void main(String[] args)
@@ -41,15 +39,11 @@ public class App
             ev2.getActividad(0).inscribir(listaEstudiantes.get(i));
         }
 
-        /*
+
         //f) Mostrar resumen de datos por cada evento
         ev1.mostrarDatos();
-        ev1.getActividad(0).mostrarInscripciones();
-        ev1.getActividad(1).mostrarInscripciones();
 
         ev2.mostrarDatos();
-        ev2.getActividad(0).mostrarInscripciones();
-        */
 
         //g) Mostrar total de eventos creados
         System.out.println("Total de eventos creados: " + EventoUniversitario.getCantidadEventos());
