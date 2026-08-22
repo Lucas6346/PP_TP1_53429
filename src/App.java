@@ -8,10 +8,9 @@ public class App
     public static void main(String[] args)
     {
         //a) Estudiantes
-        List<Estudiante> listaEstudiantes = new ArrayList<>();
-        listaEstudiantes.add(new Estudiante("53000", "Mateo"));
-        listaEstudiantes.add(new Estudiante("53001", "Juan"));
-        listaEstudiantes.add(new Estudiante("53002", "Pablo"));
+        Estudiante est1 = new Estudiante("53000", "Mateo");
+        Estudiante est2 = new Estudiante("53001", "Juan");
+        Estudiante est3 = new Estudiante("53002", "Pablo");
 
         //b) Evento
         EventoUniversitario ev1 = new EventoUniversitario("0", "Evento de Sistemas", 5000, false);
@@ -25,12 +24,12 @@ public class App
         ev1.crearActividad(1, "Taller de Programación", 200, "Taller", true);
 
         //e) Inscribir estudiantes en la charla
-        ev1.getActividad(0).inscribir(listaEstudiantes.get(0));
-        ev1.getActividad(0).inscribir(listaEstudiantes.get(1));
+        ev1.getActividad(0).inscribir(est1);
+        ev1.getActividad(0).inscribir(est2);
 
         //e) Inscribir estudiantes en el taller
-        ev1.getActividad(1).inscribir(listaEstudiantes.get(1));
-        ev1.getActividad(1).inscribir(listaEstudiantes.get(2));
+        ev1.getActividad(1).inscribir(est2);
+        ev1.getActividad(1).inscribir(est3);
 
         // Mostrar resumen de datos del evento y total de eventos creados
         ev1.mostrarDatos();
