@@ -1,8 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
-
-//FIXME ¿cambiar parametro de EventoUniversitario.getActividad(int i)?
-
 public class App
 {
     public static void main(String[] args)
