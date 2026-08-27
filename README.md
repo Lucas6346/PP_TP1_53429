@@ -12,6 +12,59 @@ El programa se ejecuta en la clase `App`, en la cual está el código que genera
 - Se inscriben 2 estudiantes en la Charla.
 - Se inscriben 2 estudiante en el Taller.
 
-Esta es la salida que muestra la terminal al ejecutar el programa:
+Al ejecutarlo, se muestra la siguiente salida: (es la misma salida que se puede ver en el archivo salida.png)
 
-<img width="1717" height="777" alt="image" src="https://github.com/user-attachments/assets/46629b48-5614-4b6d-945d-26155f1ef8fe" />
+```
+============== Mostrando datos de evento ==============
+Id del evento: 0
+Título: Evento de Sistemas
+Costo estimado: 12100.0$
+¿Es gratuito?: No
+-------------------- Sala asignada --------------------
+Id: 0
+Nombre: Sala Sistemas
+--------------------- Actividades ---------------------
+| Actividad: Charla de sistemas
+| ID de actividad: 0
+| Cupo máximo: 50
+| Esta actividad es de tipo: Charla
+======= Inscripciones =======
+| Hay un total de 2 inscripciones
+| -----
+| Fecha: 2026-08-27
+| Estado: Inscripto
+| Datos del estudiante:
+| Legajo: 53000
+| Nombre: Mateo
+| -----
+| Fecha: 2026-08-27
+| Estado: Inscripto
+| Datos del estudiante:
+| Legajo: 53001
+| Nombre: Juan
+| -----
+----------------------------------------
+| Actividad: Taller de Programación
+| ID de actividad: 1
+| Cupo máximo: 200
+| Esta actividad es de tipo: Taller
+======= Inscripciones =======
+| Hay un total de 2 inscripciones
+| -----
+| Fecha: 2026-08-27
+| Estado: Inscripto
+| Datos del estudiante:
+| Legajo: 53001
+| Nombre: Juan
+| -----
+| Fecha: 2026-08-27
+| Estado: Inscripto
+| Datos del estudiante:
+| Legajo: 53002
+| Nombre: Pablo
+| -----
+----------------------------------------
+=======================================================
+
+Total de eventos creados: 1
+```
