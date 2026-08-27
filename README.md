@@ -12,7 +12,19 @@ El programa se ejecuta en la clase `App`, en la cual está el código que genera
 - Se inscriben 2 estudiantes en la Charla.
 - Se inscriben 2 estudiante en el Taller.
 
-Al ejecutarlo, se muestra la siguiente salida: (es la misma salida que se puede ver en el archivo salida.png)
+## Clonar
+Para clonar el repositorio en IntelliJ IDEA, desde el menú inicial, ir al botón `Clone Repository`
+
+<img width="1606" height="66" alt="image" src="https://github.com/user-attachments/assets/2220cf09-ab65-49dc-80ae-f5f136c4aeae" />
+
+En `URL`, pegar la dirección del repositorio
+
+<img width="991" height="313" alt="image" src="https://github.com/user-attachments/assets/cd19b588-f370-4889-bd7a-8bcbd3c4b446" />
+
+Finalmente, presionar el botón `Clone` y listo.
+
+## Salida
+Al ejecutarlo, se muestra la siguiente salida, que también se puede ver en el archivo `salida.png`
 
 ```
 ============== Mostrando datos de evento ==============
@@ -68,3 +80,8 @@ Nombre: Sala Sistemas
 
 Total de eventos creados: 1
 ```
+
+## Mapa de memoria
+La siguiente imagen muestra el mapa de memoria solicitado, hecho con la herramienta ExcaliDraw, disponible para ser visto también en el archivo `mapa_memoria_TP1.png`
+
+<img width="1560" height="940" alt="mapa_memoria_TP1" src="https://github.com/user-attachments/assets/93d05f5b-884a-492b-9531-de3068863003" />
